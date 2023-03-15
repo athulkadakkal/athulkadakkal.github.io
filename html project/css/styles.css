@@ -2,7 +2,9 @@
 .box{
     display: flexbox;
     flex-direction: row;
+    flex: 1;
     height: 600px;
+    position: fixed;
     
 }
 .leftbox{
@@ -32,6 +34,7 @@
 }
 .enterbutton{
    background-color: chartreuse;
+   
     border-style: none;
     border-radius: 5px;
     height: 30px;
