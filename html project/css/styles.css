@@ -1,28 +1,32 @@
 
 .box{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flexbox;
+    flex-direction: row;
     height: 600px;
+    
 }
 .leftbox{
     width: 500px;
     padding-top: 220px;
-    padding-left: 400px;
-    margin-right: 6px;
+    padding-left: 300px;
+    
 }
 .heading,.subheading,.enter{
     display: flex;
     flex-direction: column;
+    width: 700px;
     align-items: center;
 }
 .heading{
-   font-size: 60px;
+    
+   font-size: 55px;
    font-style: normal;
    font-weight: bold;
    margin-bottom: 15px;
    text-shadow: 1px 1px 5px black;
 }
 .subheading{
+   
     font-size: 20px;
     margin-bottom: 15px;
 }
