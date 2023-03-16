@@ -4,7 +4,7 @@
     display: flexbox;
     flex-direction: row;
     flex: 1;
-    
+    position: fixed;
 }
 .leftbox{
     width: 600px;
@@ -16,7 +16,7 @@
     flex-direction: column;
     flex: 1;
     position: relative;
-    width: 700px;
+    padding-left: 100px;
     align-items: center;
 }
 .heading{
