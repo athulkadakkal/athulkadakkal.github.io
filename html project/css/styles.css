@@ -1,21 +1,21 @@
 
+
 .box{
     display: flexbox;
     flex-direction: row;
     flex: 1;
-    height: 600px;
     position: fixed;
-    
 }
 .leftbox{
     width: 600px;
-    padding-top: 220px;
+    padding-top: 260px;
     padding-left: 300px;
-    
 }
 .heading,.subheading,.enter{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    position: relative;
     width: 700px;
     align-items: center;
 }
@@ -32,10 +32,13 @@
     font-size: 20px;
     margin-bottom: 15px;
 }
+
 .enterbutton{
-   background-color: chartreuse;
+   background-color: rgb(110, 155, 4);
    
-    border-style: none;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
     border-radius: 5px;
     height: 30px;
     padding-left: 15px;
