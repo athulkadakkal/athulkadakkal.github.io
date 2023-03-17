@@ -1,6 +1,9 @@
 
 body{
     height: 3000px;
+    margin: 0;
+    
+    
 }
 .topbar{
     display: flex;
@@ -12,18 +15,18 @@ body{
     font-size: 20px;
     position: fixed;
     width: 100%;
+    
 }
 
 .first{
     width: 500px;
     height: 30px;
+    padding-left: 10px;
 }
 
 .second{
     display:grid;
-   grid-template-columns: 50px 50px 50px;
-   
-   
+   grid-template-columns: 50px 50px 50px 50px;
 }
 .about{
    
