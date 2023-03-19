@@ -22,6 +22,7 @@ body{
 }
 
 .first{
+    display: flex;
     width: 250px;
     height: 30px;
     padding-left: 10px;
@@ -30,6 +31,7 @@ body{
     font-size: 30px;
     padding-bottom: 8px;
     flex-shrink: 0;
+
 }
 .second{
     display:grid;
