@@ -1,49 +1,283 @@
 
 body{
-    height: 3000px;
+    height: 600px;
     margin: 0;
-    
-    
+    background-color: lightgray;
 }
+
 .topbar{
     display: flex;
     flex-direction: row;  
-   background-color: rgb(233, 233, 233);
+    flex=1;
+    background-color: rgba(12, 12, 12, 0.055);
     justify-content: space-between;
     height: 50px;
     align-items: center; 
     font-size: 20px;
     position: fixed;
     width: 100%;
-    
+    position:fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .first{
-    width: 500px;
+    width: 250px;
     height: 30px;
     padding-left: 10px;
+    text-shadow: 1px 1px 5px rgb(153, 153, 153) ;
+    margin-left: 30px;
+    font-size: 30px;
+    padding-bottom: 8px;
+    flex-shrink: 0;
 }
-
 .second{
     display:grid;
-   grid-template-columns: 50px 50px 50px 50px;
+    grid-template-columns:  50px 50px 50px 50px;
 }
 .about{
-   
     width: 200px;
     height: 30px;
     object-fit: cover;
+}
+.aboutbutton{
+    border-radius: 5px;
+    border-width: thin;
+    border-style: solid;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    cursor: pointer;
+}
+.aboutbutton .tooltip2{
+    position: absolute;
+    background-color: rgb(141, 141, 141);
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    font-size: 10px;
+    bottom: -25px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    color: white;
+}
+.aboutbutton:hover .tooltip2{
+    opacity: 0.7;
+}
+.aboutbutton:hover{
+    background-color: rgb(214, 213, 213);
+}
+
+.homebutton{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    cursor: pointer;
+}
+.homebutton .tooltip{
+    position: absolute;
+    background-color: rgb(141, 141, 141);
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    font-size: 10px;
+    bottom: -25px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    color: white;
+}
+.homebutton:hover .tooltip{
+    opacity: 0.7;
+}
+.homebutton:hover{
+    background-color: rgb(214, 213, 213);
 }
 .contact{
     width: 200px;
     height: 30px;
     object-fit: cover;
 }
+.contactbutton{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    cursor: pointer;
+}
+
+.contactbutton .tooltip3{
+    position: absolute;
+    background-color: rgb(141, 141, 141);
+    padding: 4px 4px 4px 4px;
+    bottom: -25px;
+    left: 0;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    border-radius: 5px;
+    color: white;
+}
+.contactbutton:hover .tooltip3{
+    opacity: 0.7;
+}
+.contactbutton:hover{
+    background-color: rgb(214, 213, 213);
+}
 .back{
     width: 200px;
     height: 30px;
 }
-.n{
-    padding-top: 50px;
-    white-space: nowrap;
+.backbutton
+{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    cursor: pointer;
+}
+.backbutton .tooltip4{
+    position: absolute;
+    background-color: rgb(141, 141, 141);
+    padding: 4px 4px 4px 4px;
+    bottom: -25px;
+    left: 0;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    border-radius: 5px;
+    color: white;
+}
+.backbutton:hover .tooltip4{
+    opacity: 0.7;
+}
+.backbutton:hover{
+    background-color: rgb(214, 213, 213);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-evenly;
+    column-gap: 30px;
+    margin-left: 50px;
+    padding-right: 30px;
+    padding-top: 80px;
+    position: static;
+}
+
+@media (max-width:1000px){
+    .options{
+        grid-template-columns: 250px 250px;
+    }
+}
+@media (min-width:1500px){
+    .options{
+        grid-template-columns: 250px 250px 250px 250px;
+    }
+}
+@media (min-width:1800px){
+    .options{
+        grid-template-columns: 250px 250px 250px 250px 250px;
+    }
+}
+@media (min-width:1499px) and (max-width:999px)
+{
+    .options{
+        grid-template-columns: 250px 250px 250px ;
+    }
+}
+
+.firstbox1,
+.firstbox2,
+.firstbox3,
+.firstbox4,
+.firstbox5,
+.firstbox6
+{
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    margin-bottom: 50px; 
+    align-items: center;
+    border-radius: 20px;
+}
+.firstbox1:hover{
+    background-color: rgb(241, 241, 179)
+}
+.firstbox2:hover{
+    background-color: rgb(241, 241, 179)
+}
+.firstbox3:hover{
+    background-color: rgb(241, 241, 179)
+}
+.firstbox4:hover{
+    background-color: rgb(241, 241, 179)
+}
+.firstbox5:hover{
+    background-color: rgb(241, 241, 179)
+}
+.firstbox6:hover{
+    background-color: rgb(241, 241, 179)
+}
+
+.firstboximg{  
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.firstboximg .tooltip5{
+    position: absolute;
+    margin-left: 16px;
+    text-shadow: 1px 1px 5px rgb(8, 8, 8);
+    
+}
+.firstboximg .tooltip6{
+    position: absolute;
+    margin-left:-12px;
+    text-shadow: 1px 1px 5px rgb(8, 8, 8);
+    width: 200px;
+}
+.firstboximg .tooltip7{
+    position: absolute;
+    margin-left:-12px;
+    text-shadow: 1px 1px 5px rgb(8, 8, 8);
+    width: 200px;
+    margin-top: -8px;
+}
+.firstboximg .tooltip8{
+    position: absolute;
+    margin-left:25px;
+    text-shadow: 1px 1px 5px rgb(8, 8, 8);
+    width: 200px;
+    margin-top: 0px;
+}
+.imgcam{
+    width: 150px;
+    border-radius: 75px;
+    object-fit: contain; 
+}
+
+.firstboxenter{
+    align-items: center;
+}
+
+.firstboxenterimg{
+    width: 50px;
 }
