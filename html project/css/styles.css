@@ -47,8 +47,8 @@
     cursor: pointer;
 }
 .enterbutton:hover{
-    opacity: 0;
-    margin-left: 200px;
+    
+    margin-left: 300px;
 }
 .enterbutton:active{
     background-color: rgb(0, 218, 0);
