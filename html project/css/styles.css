@@ -26,6 +26,7 @@
    margin-bottom: 15px;
    text-shadow: 1px 1px 5px white;
 }
+
 .subheading{
    
     font-size: 20px;
@@ -46,7 +47,8 @@
     cursor: pointer;
 }
 .enterbutton:hover{
-    opacity: 0.7;
+    opacity: 0;
+    margin-left: 200px;
 }
 .enterbutton:active{
     background-color: rgb(0, 218, 0);
