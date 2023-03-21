@@ -218,7 +218,8 @@ body{
     border-radius: 20px;
 }
 .firstbox1:hover{
-    background-color: rgb(241, 241, 179)
+    background-color: rgb(241, 241, 179);
+    
 }
 .firstbox2:hover{
     background-color: rgb(241, 241, 179)
