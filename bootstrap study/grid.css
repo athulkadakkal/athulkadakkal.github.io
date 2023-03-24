@@ -1,0 +1,13 @@
+.container{
+    border: 2px solid blue;
+}
+
+.row{
+    border: 2px solid red;
+}
+
+.col-1,.col,.col-3,.col-9,.col-lg-4{
+    border: 1px solid black;
+    background-color: greenyellow;
+    text-align: center;
+}

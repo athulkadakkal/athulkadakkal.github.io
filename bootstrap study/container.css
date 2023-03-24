@@ -1,0 +1,14 @@
+.container{
+    background-color: blue;
+    height: 50px;
+}
+
+.container-fluid{
+    background-color: chartreuse;
+    height: 50px;
+}
+
+.container-lg{
+    background-color: darkgoldenrod;
+    height: 50px;
+}
