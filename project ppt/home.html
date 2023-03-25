@@ -9,11 +9,32 @@
       rel="stylesheet"
       href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
     />
+
+    <style>
+      @media screen and (min-width: 0px) and (max-width: 760px) {
+        #my-content {
+          display: block;
+        } /* show it on large screen */
+      }
+      @media screen and (min-width: 780px) and (max-width: 6024px) {
+        #my-content {
+          display: none;
+        } /* hide it small screens */
+      }
+    </style>
   </head>
-  <body>
+  <body
+    style="
+      background-image: linear-gradient(
+        100deg,
+        rgb(122, 59, 119),
+        rgb(95, 141, 42)
+      );
+    "
+  >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">HUMANOID ROBOT</a>
+        <a class="navbar-brand" href="#"><b>HUMANOID ROBOT</b> </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,7 +70,11 @@
                     >PowerPoint</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="introduction.html"
+                    >introduction</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
@@ -75,6 +100,53 @@
       </div>
     </nav>
     <!------------------------------------------------------------------------>
+    <br />
+    <div
+      class="container"
+      style="text-align: justify; font-size: 20px; color: white"
+    >
+      <b style="margin-left: 50px">Robotics</b> is an emerging field of science
+      during which robots are fabricated and programmed to try to varied tasks.
+      In those robots, <b>Humanoid robots</b> are the well sophisticated robots
+      that perform tasks almost like humans and interact with them. The critical
+      introduces the event of Humanoid robots is to style it effectively. The
+      seminar deals with designing the humanoid robot then fabricating it using
+      rubbish parts. Basically, humanoid robot consists of face recognition,
+      speech recognition and motion. The face is one altogether the only ways to
+      distinguish each and every identity of face. Face recognition may be a
+      private identification system that uses personal characteristics of
+      somebody to identify the person's identity. Speech recognition systems are
+      the newest trending technologies in the world. It ranges from medical
+      applications to automated interaction systems. It is used very
+      significantly. In recent years various algorithms have been developed
+      based on Recurrent Neural Networks to get better results. A user can
+      control the robot using an Android interface and every part of the robot
+      is often moved independently around during a remote location. Providing
+      motor position change during a sys-tem and automatic controlling of the
+      info from the measuring system reduces process time and reduce the loss of
+      labor. Connecting some components like Raspberry pi , Arduino , Web
+      Camera, Servo motor etc can be used for better functioning like humans. It
+      also generates Arduino based code for the developed sequence which may be
+      deployed on the controller board thereby making the robot autonomous.
+      Further development within the Humanoid robot is often carried on by
+      attaching various sensors to the Humanoid robot to extend its degree of
+      automaticity. Further one can integrate the artificially intelligent brain
+      so that it can make decisions on its own.
+    </div>
+    <br />
+    <div class="container" id="my-content" style="text-align: center">
+      <button
+        style="
+          border: solid;
+          border-color: rgb(61, 61, 61);
+          border-radius: 10px;
+        "
+      >
+        <a href="#" style="text-decoration: none; color: black">Back to top</a>
+      </button>
+    </div>
+    <br />
+
     <!------------------------------------------------------------------------>
     <!------------------------------------------------------------------------>
     <!------------------------------------------------------------------------>
