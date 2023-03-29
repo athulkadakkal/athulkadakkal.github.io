@@ -1,6 +1,6 @@
 // Define the correct password
-const correctPassword = 'clara@2023';
-const usernamenew = 'teamclara';
+const correctPassword = '1234';
+const usernamenew = '1234';
 
 // Get the form element and add a submit event listener
 const form = document.querySelector('form');
