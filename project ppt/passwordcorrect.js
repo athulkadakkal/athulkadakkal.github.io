@@ -1,5 +1,5 @@
 // Define the correct password
-const correctPassword = '123';
+const correctPassword = 'clara@123';
 const usernamenew = 'teamclara';
 
 // Get the form element and add a submit event listener
