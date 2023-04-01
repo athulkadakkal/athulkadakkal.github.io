@@ -185,7 +185,7 @@ engine.say("hello...... i am clara...... 3 point o 7")
 engine.say("may i help u.......... you have selected microsoft catherine as the default voice")
 engine.runAndWait()
 
-ser = serial.Serial('COM3', 9600)  # configure the serial connection
+ser = serial.Serial('COM7', 9600)  # configure the serial connection
 
 while flag==2:
     if flag%2==0:
