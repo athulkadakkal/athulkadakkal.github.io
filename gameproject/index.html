@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project game</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div>
+      <button
+        onclick="
+     const randomNumber1= Math.random();
+
+    if (randomNumber1>=0 && randomNumber1<(1/3)){
+        alert('you:rock  computer: rock  *DRAW'+'\nyour score: '+scores+'    computer score: '+scores2);
+    }
+    else if (randomNumber1>=(1/3) && randomNumber1<(2/3)){scores2++;
+        alert('you:rock  computer: paper  *COMPUTER WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+    }
+    else{
+        scores++;
+        alert('you:rock  computer: scissors  *YOU WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+    }
+    if (scores===5){
+    alert('You Won The Series');
+     scores = 0;
+       scores2 = 0;
+   }
+   else if(scores2===5){
+    alert('computer Won The Series');
+     scores = 0;
+       scores2 = 0;
+   }
+   
+    "
+      >
+        Rock
+      </button>
+      <button
+        onclick="
+    const randomNumber2= Math.random();
+
+   if (randomNumber2>=0 && randomNumber2<(1/3)){scores++;
+       alert('you:paper  computer: rock  *YOU WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+   else if (randomNumber2>=(1/3) && randomNumber2<(2/3)){
+       alert('you:Paper  computer: paper  *DRAW'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+   else{scores2++;
+       alert('you:Paper  computer: scissors  *COMPUTER WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+   if (scores===5){
+    alert('You Won The Series');
+    let scores = 0;
+      let scores2 = 0;
+   }
+   else if(scores2===5){
+    alert('computer Won The Series');
+     scores = 0;
+      scores2 = 0;
+   }
+   
+   
+   "
+      >
+        Paper
+      </button>
+      <button
+        onclick="
+    const randomNumber3= Math.random();
+
+   if (randomNumber3>=0 && randomNumber3<(1/3)){scores2++;
+       alert('you:Scissor  computer: rock  *COMPUTER WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+   else if (randomNumber3>=(1/3) && randomNumber3<(2/3)){scores++;
+       alert('you:Scissor  computer: paper  *YOU WIN'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+   else{
+       alert('you:Scissor  computer: scissors  *DRAW'+'\nyour score: '+scores+'    computer score: '+scores2);
+   }
+
+   if (scores===5){
+    alert('You Won The Series');
+     scores = 0;
+       scores2 = 0;
+   }
+   else if(scores2===5){
+    alert('computer Won The Series');
+     scores = 0;
+     scores2 = 0;
+   }
+   
+   "
+      >
+        Scissor
+      </button>
+    </div>
+    <script>
+      let scores = 0;
+      let scores2 = 0;
+    </script>
+  </body>
+</html>
